@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <meta charset= "utf-8">
+        <meta name="viewpart" content="width=device-width, initial-scale=1">
+        <title>ROBOT</title>
+		<meta name="autor" content="Bencivenga_Pio">
+
+        <!--Metadati di p5.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    </head>
+    <body>
+	    <h1> ROBOT</h1>
+	    <script>
+            function setup() {
+                createCanvas(800, 400);
+				angleMode(DEGREES);
+            }
+
+            function draw() {
+            	
+            // coordinate iniziali
+            	/*
+                background(255); 
+                rect(200, 100, 80, 60); //testa
+				circle(220, 115, 10); //occhio sinistro
+				circle(260, 115, 10); //occhio destro
+				square(235, 120, 10); //naso
+				rect(220, 140, 40, 10); //bocca
+				rect(200, 160, 80, 100); //busto
+				rect(200, 260, 20, 80); // braccio sinistro
+				rect(260, 260, 20, 80); //braccio destro
+				rect(180, 160, 20, 70); //gamba sinistra
+				rect(280, 160, 20, 70); //gamba destra
+				rect(237.5, 80, 5, 20); //corpo antenna
+				circle(240, 80, 10); // punta antenna
+				*/
+				
+				background(255);
+				fill(130);
+				rect(mouseX-35, mouseY-20, 80, 60); //testa
+                fill(0);
+				circle(mouseX-15, mouseY-5, 10); //occhio sinistro
+				circle(mouseX+25, mouseY-5, 10); //occhio destro
+                fill(130,0,0);
+				square(mouseX, mouseY, 10);  //naso
+                fill(255,255,0);
+				rect(mouseX-15, mouseY+20, 40, 10); // bocca
+                fill(130);
+				rect(mouseX-35, mouseY+40, 80, 100); //busto
+				rect(mouseX-35, mouseY+140, 20, 80); //braccio sinistro
+				rect(mouseX+25, mouseY+140, 20, 80); // braccio destro
+				rect(mouseX-55, mouseY+40, 20, 70); // gamba sinistra
+				rect(mouseX+45, mouseY+40, 20, 70); // gamba destra
+                rect(mouseX+2.5 , mouseY-40, 5, 20);  //corpo antenna
+                fill(130,0,0);
+				circle(mouseX+5, mouseY-40, 10); // punta antenna
+                
+                
+                
+
+ }
+        </script>
+    </body>
+</html>
