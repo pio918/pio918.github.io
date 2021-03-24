@@ -4,12 +4,30 @@
         <meta charset= "utf-8">
         <meta name="viewpart" content="width=device-width, initial-scale=1">
         <title>ROBOT</title>
-		<meta name="autor" content="Bencivenga_Pio">
+		    <meta name="autor" content="Bencivenga_Pio">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.3/dist/united/bootstrap.css" integrity="sha256-ckcoF2ycq7qJUUIuR6n/4C51msXP3EjkfiRRPlCCWN4=" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
         <!--Metadati di p5.js-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
     </head>
     <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">pio918.github.io</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+          <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="Benevento_squadra.html">Benevento</a>
+          <a class="nav-link" href="Robot.html">Robot</a>
+          <a class="nav-link" href="Orologio.html">Orologio</a>
+          <a class="nav-link" href="softskills.html">Soft Skills</a>
+        </div>
+      </div>
+    </nav>
 	    <h1> ROBOT</h1>
 	    <script>
             function setup() {
@@ -18,10 +36,10 @@
             }
 
             function draw() {
-            	
+
             // coordinate iniziali
             	/*
-                background(255); 
+                background(255);
                 rect(200, 100, 80, 60); //testa
 				circle(220, 115, 10); //occhio sinistro
 				circle(260, 115, 10); //occhio destro
@@ -35,7 +53,7 @@
 				rect(237.5, 80, 5, 20); //corpo antenna
 				circle(240, 80, 10); // punta antenna
 				*/
-				
+
 				background(255);
 				fill(130);
 				rect(mouseX-35, mouseY-20, 80, 60); //testa
@@ -55,9 +73,9 @@
                 rect(mouseX+2.5 , mouseY-40, 5, 20);  //corpo antenna
                 fill(130,0,0);
 				circle(mouseX+5, mouseY-40, 10); // punta antenna
-                
-                
-                
+
+
+
 
  }
         </script>
